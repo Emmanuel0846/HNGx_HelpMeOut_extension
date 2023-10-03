@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/libraries/nice-select.css">
+        <link rel="stylesheet" href="../css/popup.css">
+        <title>HelpMeOut</title>
+    </head>
+    <body>
+        <div id='navigation'>
+            <br><br>
+            <div class='container1'>
+                <div class='flex-top'>
+                  <a class="a" href="https://helpmeout-ruddy.vercel.app/" target="_blank">
+                    <div class='brand-name'>
+                        <img src="../assets/bg.png" class="logo" alt="help logo" />
+                        <h3>HelpMeOut</h3>
+                    </div>
+                  </a>
+                  <div class='setting-cancel'>
+                    <img src="../assets/setting-2.svg" class="setting" alt="setting" />
+                    <img src="../assets/close-circle.svg" class="close" alt="close" />
+                  </div>
+                </div>
+                <p>This extension helps you record and share help videos with ease</p>
+            </div>
+        </div>
+        <div class='container2'>
+            <div id='tabs'>
+                <div id='recording-type'>
+                    <div id='desktop' class='type'><img src='../assets/monitor.svg' class="monitor" alt="monitor"><h3 class="screen">Full Screen</h3></div>
+                    <div id='tab-only' class='type type-active'><img src="../assets/tab.svg" class="tab" alt="tab" ><h3 class="current">Current Tab</h3></div>
+                    <div id='camera-only' class='type'><img src='../assets/images/popup/camera-only.svg'><h3 class="current">Camera</h3></div>
+                </div>
+            </div>
+
+            <div class='container2-flex2'>
+              <div class='video-camera'>
+                <img src="../assets/video-camera.svg" class="camera" alt="camera" />
+                <h3>Camera</h3>
+              </div>
+							<div class="content">
+								<input type="checkbox" id="btn" checked>
+								<label for="btn">
+									<span class="track"></span>
+									<span class="thumb">
+										<span class="eye"></span>
+									</span>
+								</label>
+							</div>
+            </div>
+            <div class='container2-flex3'>
+              <div class='microphone'>
+                <img src="../assets/microphone.svg" class="mic" alt="mic" />
+                <h3 class='audio'>Audio</h3>
+              </div>
+							<div class="content">
+								<input type="checkbox" id="btn">
+								<label for="btn">
+									<span class="track"></span>
+									<span class="thumb">
+										<span class="eye"></span>
+									</span>
+								</label>
+							</div>
+            </div>
+        </div>
+        <div id='body'>
+            <label class='check'>
+              <input type='checkbox' id="countdown">
+              <span></span>
+                <p id='count-select'><text id='countdown-time'>3 </text><labelp id="second-label">second</labelp></p> <labelp id="countdown-label">countdown</labelp>
+            </label><br>
+            <button id="record" style="margin-top: 10px" class="record-disabled">Loading...</button>
+            <div id='countdown-select'>
+                <div id='3-seconds' class='countdown'>3 <labelp class="seconds-label">seconds</labelp></div>
+                <div id='5-seconds' class='countdown'>5 <labelp class="seconds-label">seconds</labelp></div>
+                <div id='10-seconds' class='countdown'>10 <labelp class="seconds-label">seconds</labelp></div>
+            </div>
+        </div>
+
+				
+        <script src="../js/libraries/jquery-3.5.1.min.js"></script>
+        <script src="../js/libraries/jquery.nice-select.min.js"></script>
+        <script src="../js/popup.js"></script>
+    </body>
+</html>
